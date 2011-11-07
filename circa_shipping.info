@@ -1,0 +1,6 @@
+name = Circa Shipping
+description = Provides custom shipping functionality for Circa Desserts.
+package = Commerce (shipping)
+dependencies[] = commerce
+dependencies[] = commerce_shipping
+core = 7.x
