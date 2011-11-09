@@ -28,8 +28,8 @@ function circa_shipping_commerce_shipping_service_info() {
   $shipping_services = array();
 
   $shipping_services['circa_shipping_free_shipping'] = array(
-    'title' => t('Free shipping'),
-    'description' => t('Free shipping for orders over $30.'),
+    'title' => t('Standard shipping'),
+    'description' => t('Free standard shipping for orders over $30.'),
     'shipping_method' => 'circa_standard_shipping',
     'price_component' => 'shipping',
     'callbacks' => array(
@@ -39,7 +39,7 @@ function circa_shipping_commerce_shipping_service_info() {
 
   $shipping_services['circa_shipping_standard_shipping'] = array(
     'title' => t('Standard shipping'),
-    'description' => t('Standard shipping'),
+    'description' => t('Standard shipping for orders under $30.'),
     'shipping_method' => 'circa_standard_shipping',
     'price_component' => 'shipping',
     'callbacks' => array(
